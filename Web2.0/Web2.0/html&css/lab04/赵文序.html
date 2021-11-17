@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>计算器</title>
+    <style>
+        body{
+            margin:auto;
+            width:214px;
+            text-align:center;
+            background-color: black;
+        }
+
+        h1{
+            color: white;
+        }
+
+        button {
+            margin-top: 0.2px;
+            margin-left: 0.2px;
+            width: 50px;
+            height: 50px;
+            background: black;
+            color: white;
+        }
+
+        input {
+            margin: center;
+            width: 200px;
+            height: 30px;
+            text-align: right;
+            font-size:25px;
+        }
+
+        #container {
+            margin-left: 1px;
+            width: 220px;
+            height: 260px;
+        }
+    </style>
+    <script type="text/javascript" src="JavaScript1.js"></script>
+</head>
+
+<body onload="onLoad()">
+    <h1 align="center">计算器</h1>
+    <input id="input" type="text">
+    <div id="container">
+        <div>
+            <button onclick="input(this)">7</button>
+            <button onclick="input(this)">8</button>
+            <button onclick="input(this)">9</button>
+            <button onclick="input(this)">/</button>
+        </div>
+
+        <div>
+            <button onclick="input(this)">4</button>
+            <button onclick="input(this)">5</button>
+            <button onclick="input(this)">6</button>
+            <button onclick="input(this)">*</button>
+        </div>
+
+        <div>
+            <button onclick="input(this)">1</button>
+            <button onclick="input(this)">2</button>
+            <button onclick="input(this)">3</button>
+            <button onclick="input(this)">-</button>
+
+        </div>
+
+        <div>
+            <button onclick="input(this)">0</button>
+            <button onclick="input(this)">.</button>
+            <button onclick="backSpace()">⬅</button>
+            <button onclick="input(this)">+</button>
+        </div>
+        <div>
+            <button onclick="input(this)">(</button>
+            <button onclick="input(this)">)</button>
+            <button onclick="clear()">C</button>
+            <button onclick="inputOper(this)">=</button>
+        </div>
+    </div>
+
+    <script>
+        function clear(){
+            document.getElementById("input").value = "";
+        }
+        function input(t) {
+            var val = t.innerHTML;
+            var xs = document.getElementById("input");
+            xs.value += val;
+        }
+
+        function onLoad() {
+            document.getElementById("input").focus();
+        }
+        
+        function inputOper() {
+            var xs = document.getElementById("input");
+            xs.value = eval(document.getElementById("input").value);
+        }
+        function backSpace() {
+            var ar = document.getElementById("input");
+            ar.value = ar.value.substring(0, ar.value.length - 1);
+        }
+    </script>
+   
+</body>
+
+</html>

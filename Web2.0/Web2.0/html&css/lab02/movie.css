@@ -1,0 +1,128 @@
+/*消除顶部缝隙*/
+html,body,div{
+    margin:0;
+    padding:0
+}
+/*网页字体及背景设置*/
+body{
+    font-family: Verdana;
+    background-image: url(img/background.png);
+    font-size: 8pt;
+}
+
+/*标题设置*/
+h1{
+    font-size: 24pt;
+    font-family: Tahoma;
+    text-align: center;  
+}
+
+/*横幅图片设置*/
+.header{
+    background-image: url(img/bannerbackground.png);
+    background-repeat: repeat-x;
+    margin-top:0px;
+}
+
+/*中部方框设置*/
+.main{
+    background-image: url(img/rottenbackground.png);
+    background-repeat: repeat-x;
+    background-size: 800px 83px;
+    border-style:solid;
+    border:4;
+    border-color:#808080;
+    width:800px;
+    height:784px;
+    margin:auto;
+}
+
+/*框内横幅设置*/
+.smallheader{
+    width: 550px;
+    vertical-align: text-bottom;
+}
+
+/*评论区div设置*/
+.zuo{
+    width:550px;
+    float: left;
+}
+.zuobian{
+    width:47%;
+    margin-left:2%;
+    margin-right:2%;
+    float:left;
+}
+
+.youbian{
+    float: left;
+    width:47%;
+    margin-right:2%;
+}
+.first{
+    background-color: #E1D697;
+    border-style: solid;
+    border-color: gray;
+    font-size: 8pt;
+    font-weight: bold;
+    padding: 8px;
+    margin:14px;
+    overflow:hidden;
+}
+
+.third{
+    margin:14px;
+    padding-bottom: 2em;
+    padding:8px;
+}
+
+.third img{
+    float:left;
+}
+
+.first img{
+    float:left;
+    vertical-align: text-top;
+}
+
+/*右半部分文本设置*/
+.righttxt{
+    float:right;
+    width: 250px;
+    background-color: #A2B964;
+    width:250px;
+    height:770px;
+    margin:0px;
+}
+
+.righttxt dl{
+    padding:10px;
+}
+
+.righttxt dd{
+    font-size: 8pt;
+    font-family: sans-serif;
+}
+
+.righttxt dt{
+    font-weight: bold;
+    font-size: 8pt;
+    font-family: sans-serif;
+    position: relative;
+}
+
+/*底部文本设置*/
+.bottomtxt{
+    background-color: #A2B964;
+    text-align: center;
+    position: relative;
+    width:800px;
+    height:30px;
+    clear:left;
+}
+
+.icon{
+    position:absolute;
+    right: 0px;
+}

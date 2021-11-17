@@ -1,0 +1,46 @@
+h1{                                              /*主标题*/
+    color: #A4A400;                            /*标题颜色*/
+    background-color: #F0F0F0;                 /*标题颜色*/
+    font-family: Futura;                         /*字体风格*/
+    font-size: 22pt;                             /*字体大小*/ 
+    font-weight: bold;
+    text-align: center;                          /*文本位置设置*/
+    text-decoration: underline;                  /*下划线*/
+}
+
+h2{                                              /*副标题*/
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: Futura;
+    font-size: 18pt;
+    font-weight: normal;
+    text-decoration: underline;
+    text-align: left;
+}
+
+body{            
+    background-image: url(picture/silverware.jpg);
+    background-repeat: repeat;                   /*背景刀叉图片*/
+    word-spacing: 0.2em;                         /*单词间距*/
+}
+
+p{
+    color:#404040;
+    font-size: 11pt;
+    font-family: Georgia;
+    font-style: italic;
+    text-align: left;
+    background-color: #FFFFC8;
+    width: 1200px;
+    height: 65px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    color: #A4A400;                              /*链接颜色*/
+}
+
+ul{
+    list-style-image: url('picture/pie_icon.gif');
+}
